@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SchoolOfIOT</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="https://lu.ma/u/usr-8j0NjbOwNnFBjTe"><i class="fa-solid fa-cloud"> SCHOOL OF IOT</i></a></div>
+            <ul class="links">
+                <li><a href="cyto" target="_blank">Home</a></li>
+                <li><a href="about" target="_blank">About</a></li>
+                <li><a href="https://discord.com/invite/robotix-io-884745991058784297" target="_blank">Discord</a></li>
+            </ul>
+            <li><a href="https://lu.ma/schoolofiot-event001" target="_blank" class="action_btn">Join</a></li>
+            <div class="toggel_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="dropdown_menu">
+                <li><a href="cyto" target="_blank">Home</a></li>
+                <li><a href="about" target="_blank">About</a></li>
+                <li><a href="https://discord.com/invite/robotix-io-884745991058784297" target="_blank">Discord</a></li>
+                <li><a href="https://lu.ma/schoolofiot-event001" target="_blank" class="action_btn">Join</a></li>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="cyto">
+            <h1>Welcome</h1>
+            <p>Click <a href="https://lu.ma/schoolofiot-event001" target="_blank">Join</a> to register for the upcoming workshop!<br>
+            Don't miss out</p>
+       
+        </section>
+    </main>
+</body>
+<footer>
+    <div class="footer-links">
+        <a href="https://www.instagram.com/SchoolofIoT/" target="_blank"><i class="fab fa-instagram"></i> </a>
+        <a href="https://discord.com/invite/robotix-io-884745991058784297" target="_blank"><i class="fab fa-discord"></i> </a>
+        <a href="https://t.me/+tkxl_Q394vo1MmY1" target="_blank"><i class="fab fa-telegram"></i> </a>
+    </div>
+</footer>
+
+</html>
+<script>
+    const togglbtn=document.querySelector('.toggel_btn')
+    const togglbtn_icon=document.querySelector('.toggel_btn i')
+    const dropdown_menu=document.querySelector('.dropdown_menu')
+
+    togglbtn.onclick = function(){
+        dropdown_menu.classList.toggle('open');
+        const isOpen = dropdown_menu.classList.contains('open')
+        togglbtn_icon.classList = isOpen
+        ?"fa-solid fa-xmark"
+        :"fa-solid fa-bars"
+    }
+</script>

@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    background-image:url('bg1.png');
+    background-size: cover;
+    background-position: center;
+  }
+  li{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  a:hover{
+    color: rgb(227, 102, 102);
+  }
+
+  header{
+    position: relative;
+    padding: 0 2rem;
+  }
+  .navbar{
+    width: 100%;
+    height: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-left:5%;
+  }
+  .footer-links{
+    width: 100%;
+    height: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: larger;
+    gap: 2rem;
+  }
+
+  .navbar .logo{
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .navbar .links{
+    display: flex;
+    font-size: large;
+    gap: 2rem;
+  }
+
+  .navbar .toggel_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+  }
+
+  .action_btn{
+    background-color: orange;
+    color:#fff;
+    padding: 0.4rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+  }
+
+  .action_btn:hover{
+    scale:1.05;
+    color: #fff;
+  }
+
+  .action_btn:active{
+    scale: 0.95;
+  }
+  .dropdown_menu{
+    display: none;
+    position: absolute;
+    font-size: large;
+    right: 2rem;
+    top:60px;
+    height: 0;
+    width: 200px;
+    background: rgba(124, 245, 154, 0.13);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .dropdown_menu.open{
+    height: 180px;
+  }
+  .dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section#cyto{
+    height: calc(85vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items:self-start;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-left: 22%;
+  }
+  #cyto h1{
+    font-size: 4rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
+  @media (max-width:992px){
+    .navbar .action_btn,
+    .navbar .links{
+        display: none;
+    }
+    
+    .navbar .toggel_btn{
+        display: block;
+    }
+    .dropdown_menu,
+    .dropdown_menu .action_btn{
+        display: block;
+    }
+  }
+  @media (max-width:576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+  }
