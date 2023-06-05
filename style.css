@@ -76,7 +76,7 @@
     font-size: large;
     font-weight: bold;
     cursor: pointer;
-    transition: transform 0.2 ease;
+    transition: transform 0.2s ease;
   }
 
   .action_btn:hover{
